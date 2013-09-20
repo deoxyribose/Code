@@ -1,0 +1,10 @@
+2.1
+A number of samples N gives a much worse looking 2d histrogram than a 1d histogram. 
+This is due to the fact that in order to fill an NxN area such that there are x points per square unit, you need 
+x*N^2 points, while in order to fill a line segment of length N such that there are x points per unit, you need just x*N points. This is what one does when creating a 2d and 1d histogram respectively. The property that the number of points needed to fill a d-dimensional hypercube with some constant density scales exponentially with d, is known as the Curse of Dimensionality.
+
+2.2
+Increasing the variance of one component widens the distribution in the direction of the eigenvector corresponding to that component. Increasing both variances by an equal percentage scales the width of the distribution. Setting covariances to 0 but having unequal variances makes the eigenvectors parallel to the axes, with the eigenvector that has greater eigenvalue being parallel to the x-axis. If the covariance matrix is proportional to the identity matrix, the contours of the distribution are circles. This would be the case if the two components were independent, eq if one measured the height of men in Botswana, and the other measured the amount of chocolate milk at bithdays of 5-year olds in 1978 in Dublin.
+
+2.3
+The eigenvector with the greatest eigenvalue points in the direction of greatest variance, while the other eigenvector points in the direction of greatest variance such that the vector is orthogonal to the first one (actually, for 2d covariance matrices, there is only one direction orthogonal to the first one, not counting the negative of that same direction). If the diagonal matrix with singular values is not multiplied on, the transformed data are uncorrelated, but the variances are not 1 (and not equal).
